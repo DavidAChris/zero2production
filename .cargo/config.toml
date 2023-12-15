@@ -1,0 +1,8 @@
+[env]
+DATABASE_URL = "postgres://postgres:password@localhost:5432/newsletter"
+
+[alias]
+dev = 'watch -x fmt -x check -x test -x run'
+coverage = 'tarpaulin --ignore-tests'
+lint = 'clippy -- -D warnings'
+sec = 'audit'
